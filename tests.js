@@ -63,4 +63,13 @@ describe("isEven", function() {
     it("Should return 'false' when executed with 'isEven(3)'", function() {
         expect(isEven(3)).toBe(false);
     });
+    it("Should return 'false' when called with 'isEven('banana')'", function() {
+        expect(isEven("banana")).toBe(false);
+    });
+    it("Should return 'true' when called with 'isEven('8')'", function() {
+        expect(isEven("8")).toBe(true);
+    });
+    it("Should return 'false' when called with 'isEven(Infinity)", function() {
+        expect(isEven(Infinity)).toBe(false);
+    });
 });

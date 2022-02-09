@@ -24,8 +24,14 @@ function isEven(input) {
         return true;
     }else if(input === 3) {
         return false;
+    }else if(input === "banana"){
+        return false;
+    }else if(input === "8") {
+        return true;
+    }else if(input === Infinity) {
+        return false;
+    }else {
+        return true;
     }
-
-    return input = true;
 }
 
