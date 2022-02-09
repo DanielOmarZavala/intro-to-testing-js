@@ -30,6 +30,8 @@ function isEven(input) {
         return true;
     }else if(input === Infinity) {
         return false;
+    }else if(input === true || input === false) {
+        return false;
     }else {
         return true;
     }
