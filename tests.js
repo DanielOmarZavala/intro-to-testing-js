@@ -60,4 +60,7 @@ describe("isEven", function() {
     it("Sould return 'true' when executed with 'isEven(-4)'", function() {
         expect(isEven(-4)).toBe(true);
     });
+    it("Should return 'false' when executed with 'isEven(3)'", function() {
+        expect(isEven(3)).toBe(false);
+    });
 });

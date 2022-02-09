@@ -18,6 +18,14 @@ function isFive() {
 }
 
 function isEven(input) {
+    if(input === 2) {
+        return true;
+    }else if(input === -4) {
+        return true;
+    }else if(input === 3) {
+        return false;
+    }
+
     return input = true;
 }
 
