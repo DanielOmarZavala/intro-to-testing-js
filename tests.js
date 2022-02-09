@@ -14,6 +14,7 @@ describe('helloWorld', function() {
     });
 });
 
+//Unit tests for the sayHello function
 describe("sayHello", function() {
     it("should be a defined function", function() {
         expect(typeof sayHello).toBe("function");
@@ -38,8 +39,25 @@ describe("sayHello", function() {
     });
 });
 
+//Unit tests for the isFive function
 describe("isFive", function() {
     it("Should be a defined function 'isFive'", function() {
         expect(typeof isFive).toBe("function");
+    });
+});
+
+//Unit tests for the isEven function
+describe("isEven", function() {
+    it("Should be a defined function 'isEven'", function() {
+        expect(typeof isEven).toBe("function");
+    });
+    it("Should return boolean no matter the input", function(){
+        expect(typeof isEven()).toBe("boolean");
+    });
+    it("Should return 'true' when executed with 'isEven(2)'", function() {
+        expect(isEven(2)).toBe(true);
+    });
+    it("Sould return 'true' when executed with 'isEven(-4)'", function() {
+        expect(isEven(-4)).toBe(true);
     });
 });
